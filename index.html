@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+
+		body {
+			/* background-color: #161616; */
+			position: relative;
+		}
+
+		span {
+			font-style: italic;
+			color: rgb(255, 133, 133);
+		}
+
+		h1 {
+			font-size: 3rem;
+			font-family: "Limelight";
+			font-weight: 900;
+			color: rgb(218, 218, 218);
+			/* display: flex; */
+			/* line-height: 6rem; */
+			text-align: center;
+			font-style: italic;
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem
+		}
+
+		p {
+			font-size: 1rem;
+			font-family: "poppins";
+			width: 100%;
+			text-align: center;
+			color: white;
+		}
+
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			/* align-items: center; */
+			/* min-height: 100vh; */
+			width: 100%;
+			max-width: 800px;
+			margin-inline: auto;
+		}
+
+		.happy-bday-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 4rem;
+			padding: 5rem 3rem;
+			border: 2px solid rgb(255, 133, 133);
+			border-radius: 20px;
+			background-color: #161616b0;
+			align-items: center;
+			margin-block: 5rem;
+		}
+
+		.wish-section {
+			display: flex;
+			gap: 2rem;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.gray {
+			color: rgb(102, 102, 102);
+			font-size: 1rem;
+		}
+
+		.list-of-characters {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+			color: white;
+			align-items: center;
+
+		}
+
+		img {
+			width: 300px;
+			border-radius: 10px;
+			border: 5px solid rgb(255, 133, 133);
+			box-shadow: 20px 20px rgba(255, 127, 127, 0.411);
+		}
+
+		.title {
+			font-family: "Borel";
+			font-size: 2.5rem;
+			font-weight: 900;
+			color: rgb(255, 174, 159);
+			line-height: 3rem;
+			text-align: center;
+		}
+
+		.list {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.list-item {
+			font-family: "poppins";
+			font-weight: 400;
+			color: rgb(219, 196, 196);
+			font-size: 0.81rem;
+		}
+
+		.poem {
+			font-style: italic;
+			line-height: 2rem;
+		}
+
+		.memories {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 4rem;
+			margin-block: 5rem;
+		}
+
+		.memories .wish-section {
+			gap: 4rem;
+
+		}
+
+		.memories .wish-section {
+			margin-top: 1rem;
+		}
+
+		.memoriesmobile {
+			display: none;
+		}
+
+		.note {
+			display: none;
+		}
+
+
+		@media only screen and (max-width: 600px) {
+			/* .note {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: fixed;
+				inset: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: blanchedalmond;
+				z-index: 100;
+			} */
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="note">
+		Turn on desktop mode </div>
+	<video autoplay muted loop id="myVideo">
+		<source src="ex.mp4" type="video/mp4">
+	</video>
+	<div class="main">
+		<div class="happy-bday-section">
+
+			<h1>Happiest birthday, <br> <span>Shruti!</span>
+				<div class="gray">A small <br> present for
+					you</div>
+			</h1>
+
+			<div class="wish-section">
+				<p> Each second with you is like a magnificent dream I never wish to awake from. Your smile
+					illuminates
+					my existence, your laughter is my most cherished tune, and your being brings my heart an
+					inner peace
+					it never knew.<br> <br>
+
+					I have no idea what I did to warrant someone as extraordinary as you, but I assure you that
+					I will
+					love you, support you, and value you more every day. Shruti, not only are you the love of my
+					life—but you are also my inspiration, my joy, and my everything.<br> <br>
+
+					Where life may lead us, I'll always be your hand in yours and walk at your side.<br> <br>
+
+					I love you, Shruti—longingly, fully, endlessly.
+				</p>
+				<img src="./WhatsApp Image 2025-04-06 at 14.25.25_6f8a18c1.jpg" alt="">
+
+			</div>
+			<div class="list-of-characters">
+				<div class="title">What I like in you...</div>
+				<div class="list">
+					<div class="list-item">1. Her smile – It lights up your entire world.
+					</div>
+					<div class="list-item">2. Her laugh – That sound you could listen to forever.
+					</div>
+					<div class="list-item">3. The way she cares – So deeply, genuinely, and selflessly.
+					</div>
+					<div class="list-item">4. Her eyes – Full of warmth, mischief, and stories.
+					</div>
+					<div class="list-item">5. Her support – Always standing by your side, no matter what.
+
+					</div>
+					<div class="list-item">6. Her hugs – Where you feel safest and most loved.
+
+					</div>
+					<div class="list-item">7. Her intelligence – The way she thinks and handles life is
+						inspiring.
+
+
+					</div>
+					<div class="list-item">8. Her sense of humor – She makes life lighter and brighter.
+
+					</div>
+					<div class="list-item">9. Her voice – Soothing, sweet, and unforgettable.
+
+					</div>
+					<div class="list-item">10. Her little quirks – The things that make her uniquely her.
+					</div>
+					<div class="list-item">11. Her ambition – How she chases her dreams with passion.
+					</div>
+
+					<div class="list-item">12. Her loyalty – She’s always real and always there.
+
+					</div>
+					<div class="list-item">13. Her style – Whether cozy or glam, she rocks it.
+
+					</div>
+					<div class="list-item">14. Her creativity – In the way she speaks, thinks, or expresses
+						herself.
+
+					</div>
+					<div class="list-item">15. The way she loves you – Fully, beautifully, and
+						without hesitation.</div>
+				</div>
+			</div>
+
+			<div class="list-of-characters">
+				<div class="title">A small poem for you...</div>
+				<div class="list-item poem">
+					Shrutzz, your smile’s my favorite view,<br>
+					A spark of sunshine breaking through.<br>
+					Your laugh, a song I always crave,<br>
+					With you, I'm bold, I'm free, I'm brave.<br>
+					You're my calm, my joy, my art—<br>
+					The sweetest beat within my heart.<br>
+				</div>
+			</div>
+
+			<div class="memories">
+				<div class="title">What you've been through...</div>
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.25_0f447cf2.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.25_3688a0e1.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+
+				</div>
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.26_7b50c308.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.26_b50a0f8d.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+
+
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.28_4ac7ee45.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+
+
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.27_f9538c32.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+
+
+				<div class="wish-section">
+					<img src="./WhatsApp Image 2025-04-06 at 14.25.27_c421a57b.jpg" alt="">
+					<p> I make websites, web apps and design modern UI/UX. My passion lies in transforming
+						imagination
+						into
+						tangible code. I am dedicated to delivering exceptional results and impressing my
+						clients.
+						I've
+						been
+						invested in learning various technologies for the past 3 years and now aim to make it my
+						career.
+					</p>
+
+				</div>
+			</div>
+			<div class="title">few words of love</div>
+			<div class="audio-section">
+				<audio controls>
+					<source src="Audio from Zahid.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
